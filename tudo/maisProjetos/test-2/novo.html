@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // VARIAVEIS <--
+      let sapatoValor = 2;
+      let onibusValor = 4;
+      let taxiValor = 11.4;
+      let taxiValorReal = 0;
+
+      let total = sapatoValor + onibusValor + taxiValor;
+      let media = total / 3;
+      // FUNÇOES <--
+      function transformaMoedaReal() {
+        taxiValorReal = taxiValor.toFixed(2).replace(".", ",");
+      }
+      //EXECUÇÕES DAS FUNÇOES E DE OUTRAS FUNÇÕES <--
+      transformaMoedaReal();
+
+      document.write(
+        "<h1>Meio com o menor preço para ir no Parque Ibirapuera saindo do MASP</h1>"
+      );
+
+      document.write("<p>Sapato - R$ " + sapatoValor + ",00</p>");
+      document.write("<p>Ônibus - R$ " + onibusValor + ",00</p>");
+      document.write("<p>99Taxi - R$ " + taxiValorReal + "</p>");
+
+      document.write("<p>Total - " + total + "</p>");
+      document.write("<p>Média - " + media + "</p>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+(1) Faça uma mensagem de 'Olá Mundo'.... Exemplo: 'Olá Mundo'
+(2) Faça essa mensagem em um arquivo javascript externo e chame ela... (Importado)
+(3) Faça uma saída de soma de 2 inteiros, ex: alert(2 + 2) - Somar dois Inteiros
+(4) No HTML Crie:
+1 - Campo/Input do tipo text para preencher o nome completo.
+1 - Botão com o texto: 'Exibir Nome' e ao clicar neste botão é exibido um alert com o valor do campo nome completo, ex: ' O Nome Completo é: "xxxx". '
+
+(5) exiba a quantidade de letras que possuem o texto inserido ao clicar no botão
+Exemplos de entrada e saida:
+'Gabriel' // 7
+'Daniel' // 6
+'Ronaldo' // 6
+'Dennis Ritchie' // 14 (Espaço conta)
+
+RESPOSTA:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <p>Nome Completo</p>
+    <input type="text" id="message" value="" />
+    <br />
+    <button type="button" onclick="alert(message.value.length)">Button</button>
+
+    <script type="text/javascript" src="my_script.js"></script>
+  </body>
+</html>
+

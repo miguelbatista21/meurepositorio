@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .btn-group button {
+      background-color: #ff0000; /* Green background */
+      border: 1px solid green; /* Green border */
+      color: white; /* White text */
+      padding: 10px 24px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      width: 50%; /* Set a width if needed */
+      display: block; /* Make the buttons appear below each other */
+    }
+
+    .btn-group button:not(:last-child) {
+      border-bottom: none; /* Prevent double borders */
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>titulo da pagina</title>
+  </head>
+
+  <body>
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="demo"></p>
+
+    <p>MEU TEXTO.</p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+
+    <div class="btn-group">
+      <button>TOP MAGIC</button>
+      <button>TOP SKILLS</button>
+      <button>TOP FISHING</button>
+    </div>
+
+    <h1>Tibia</h1>
+    <h1>TOP LEVEL</h1>
+
+    <table id="top-level-table">
+      <tr>
+        <th>
+          <button type="button" onclick="alert('Hello world!')">n.º</button>
+        </th>
+        <th>
+          <button type="button" onclick="alert('Hello world!')">Player</button>
+        </th>
+        <th>
+          <button type="button" onclick="alert('Hello world!')">Level</button>
+        </th>
+      </tr>
+    </table>
+  </body>
+
+  <script src="script.js"></script>
+</html>
